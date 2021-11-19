@@ -1,0 +1,7 @@
+<div id="elevator-elevators">
+  <ul>
+    <li class='elevator-list' *ngFor="let elevator of elevators">
+      <app-elevator [id]="elevator.id" [floor]="elevator.floorNumber"></app-elevator>
+    </li>
+  </ul>
+</div>

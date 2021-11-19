@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <div *ngFor="let floor of floors" fxLayout="column" fxLayoutAlign="center center">
+    <div class='floor' (click)="selectFloor(floor)" [ngStyle]="{'height':getFloorHeight()}" fxLayout="row" fxLayoutAlign="center center">
+      Floor&nbsp;-&nbsp;<button [ngClass]="{'active': floor.active}" mat-raised-button>{{floor.number}}</button>
+    </div>
+    <div class="blackline"></div>
+  </div>
+</div>
+

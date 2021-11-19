@@ -1,0 +1,10 @@
+.elevator {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: solid;
+  position: relative;
+  margin: 1px;
+  top: 0;
+  transition: top 0.5s;
+}
